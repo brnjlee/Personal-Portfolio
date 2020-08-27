@@ -167,9 +167,16 @@ const Links = ({ github, live }) => {
 const ProjectImage = ({ id, isSelected }) => {
   const lgWidth =
     window.innerWidth > 1000 ? window.innerWidth / 2 : window.innerWidth - 100;
-  const smWidth = window.innerWidth > 700 ? 550 : window.innerWidth - 70;
+  const smWidth =
+    window.innerWidth > 700
+      ? 550
+      : window.innerWidth > 400
+      ? window.innerWidth - 100
+      : window.innerWidth - 70;
+
+  const y = window.innerWidth > 500 ? 70 : 30;
   const image = {
-    hidden: { y: 70, width: smWidth },
+    hidden: { y, width: smWidth },
     show: { y: 300, width: lgWidth }
   };
   const inverted = useInvertedScale();
