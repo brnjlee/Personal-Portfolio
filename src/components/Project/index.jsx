@@ -166,8 +166,7 @@ const Links = ({ github, live }) => {
 };
 
 const ProjectImage = ({ id, isSelected }) => {
-  const lgWidth =
-    window.innerWidth > 1000 ? window.innerWidth / 2 : window.innerWidth - 100;
+  const lgWidth = window.innerWidth > 1000 ? 900 : window.innerWidth - 100;
   const smWidth =
     window.innerWidth > 700
       ? 550
@@ -181,9 +180,6 @@ const ProjectImage = ({ id, isSelected }) => {
     show: { y: 300, width: lgWidth }
   };
   const inverted = useInvertedScale();
-  // const y = isSelected ? 180 : 20;
-  // const width = isSelected ? lgWidth : 400;
-  // const height = Math.floor(0.75 * width);
 
   return (
     <motion.div
@@ -196,14 +192,6 @@ const ProjectImage = ({ id, isSelected }) => {
       variants={image}
       transition={isSelected ? openSpring : closeSpring}
     >
-      {/* <Image
-        className="project__image"
-        cloudName={process.env.REACT_APP_CLOUD_NAME}
-        publicId={id}
-        width="100%"
-      >
-        <Transformation width={width} height={height} crop="fit" />
-      </Image> */}
       <motion.img className="project__image" src={id} alt="" width="100%" />
     </motion.div>
   );
