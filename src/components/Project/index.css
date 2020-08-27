@@ -246,3 +246,32 @@
     height: 300px;
   }
 }
+
+.project__close {
+  height: 50px;
+  width: 50px;
+  font-size: 25px;
+  border-radius: 20px;
+  background: #555968;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 200ms ease;
+  /* cursor: pointer; */
+  position: fixed;
+  bottom: -100px;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 1;
+}
+
+.project__close:hover {
+  border-radius: 50%;
+  background: white;
+  color: #2f343c;
+}
+
+.project__close-show {
+  bottom: 20px;
+}

@@ -2,9 +2,7 @@ import React from "react";
 import { motion, useMotionValue, useInvertedScale } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useRouteMatch } from "react-router-dom";
-import { Image, Transformation } from "cloudinary-react";
-import { FiGithub, FiExternalLink } from "react-icons/fi";
-import { LoremIpsum } from "react-lorem-ipsum";
+import { FiGithub, FiExternalLink, FiX } from "react-icons/fi";
 import { format } from "date-fns";
 
 import "./index.css";
@@ -51,6 +49,12 @@ export const Project = ({
             <ContentPlaceholder images={images} />
           </motion.div>
         </div>
+        <Link
+          to="/projects"
+          className={`project__close ${isSelected && "project__close-show"}`}
+        >
+          <FiX />
+        </Link>
         {!isSelected && (
           <div className="card-open-link-container">
             <Link to={`${url}/${id}`} className={`card-open-link`} />
@@ -76,19 +80,16 @@ const Overlay = ({ isSelected }) => (
 );
 
 const ContentPlaceholder = React.memo(images => {
-  const inverted = useInvertedScale();
   const item = {
     hidden: {
       opacity: 0,
       display: "none",
       y: 50
-      // maxHeight: 0
     },
     show: {
       display: "block",
       opacity: 1,
       y: 0,
-      // maxHeight: 1000,
       transition: { delay: 0, ease: "easeOut" }
     }
   };
@@ -204,16 +205,6 @@ const ProjectImage = ({ id, isSelected }) => {
         <Transformation width={width} height={height} crop="fit" />
       </Image> */}
       <motion.img className="project__image" src={id} alt="" width="100%" />
-      {/* <motion.img
-        className="project__image"
-        src={id}
-        sizes="(max-width: 600px) 800px,
-            2000px"
-        srcset="/assets/macbook.png 800w,
-        /assets/macbook.png 2000w"
-        alt=""
-        width="100%"
-      /> */}
     </motion.div>
   );
 };
