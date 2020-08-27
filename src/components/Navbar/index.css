@@ -1,0 +1,113 @@
+.navbar__placeholder {
+  position: relative;
+  height: 70px;
+  width: 100%;
+}
+
+.navbar__container {
+  position: fixed;
+  height: 70px;
+  width: 700px;
+  left: 50%;
+  transform: translate(-50%, 0);
+  display: flex;
+  align-items: center;
+  z-index: 10;
+}
+
+@media only screen and (max-width: 800px) {
+  .navbar__container {
+    width: 100%;
+    padding: 0 20px;
+  }
+}
+
+.navbar__logo {
+  text-decoration: none;
+  color: white;
+  font-size: 25px;
+  letter-spacing: 0.1px;
+  flex: 1;
+}
+
+.navbar__link {
+  text-decoration: none;
+  position: relative;
+  color: white;
+  font-size: 15px;
+  font-weight: 400;
+  margin: 0 20px;
+}
+
+.navbar__link.selected:after {
+  width: 100%;
+}
+
+.navbar__link:after {
+  position: absolute;
+  content: "";
+  height: 2px;
+  /* adjust this to move up and down. you may have to adjust the line height of the paragraph if you move it down a lot. */
+  bottom: -4px;
+
+  /****** 
+ optional values below 
+ ******/
+
+  /* center - (optional) use with adjusting width   */
+  /* margin: 0 auto; */
+  left: 0;
+  right: 0;
+  width: 0;
+  background: white;
+
+  /* optional animation */
+  -o-transition: 0.5s;
+  -ms-transition: 0.5s;
+  -moz-transition: 0.5s;
+  -webkit-transition: 0.5s;
+  transition: 0.5s;
+}
+
+/* optional hover classes used with anmiation */
+.navbar__link:hover:after {
+  width: 100%;
+}
+
+.navbar__avatar-container {
+  margin: 0 20px;
+  position: relative;
+}
+
+.navbar__avatar {
+  width: 30px;
+  height: 30px;
+  border-radius: 30%;
+  cursor: pointer;
+}
+
+.dropdown__container {
+  width: 125px;
+  background-color: #1c1c1e;
+  padding: 15px;
+  position: absolute;
+  top: 40px;
+  left: -60px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.dropdown__link {
+  margin: 5px 0;
+  transition: all 200ms ease;
+  cursor: pointer;
+  border-radius: 10px;
+  padding: 10px;
+}
+
+.dropdown__link:hover {
+  background-color: #292b32;
+}

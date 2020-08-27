@@ -1,0 +1,18 @@
+.toast__container {
+  font-size: 16px;
+  font-weight: bold;
+  box-sizing: border-box;
+  position: fixed;
+  top: -50px;
+}
+
+.toast__notification {
+  min-width: 300px;
+  height: 50px;
+  border-radius: 20px;
+  background-color: #4ecca3;
+  text-align: center;
+  line-height: 50px;
+  box-sizing: border-box;
+  padding: 0 20px;
+}
