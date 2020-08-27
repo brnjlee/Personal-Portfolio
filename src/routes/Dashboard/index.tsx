@@ -1,30 +1,7 @@
 import React, { useEffect, useState } from "react";
-// import { Link } from "react-router-dom";
-// import { useApolloClient, useQuery } from "@apollo/react-hooks";
-// import { gql } from "apollo-boost";
-// import { useHistory, useRouteMatch } from "react-router-dom";
-// import { BrowserRouter as Router, Route, Redirect } from "react-router-dom";
-
 import { Project } from "../../components/Project";
 
 import "./index.css";
-
-// const GET_PLANS = gql`
-//   {
-//     plans {
-//       _id
-//       title
-//       description
-//       displayImageId
-//     }
-//   }
-// `;
-
-// const GET_LOGGED_IN = gql`
-//   {
-//     isLoggedIn @client
-//   }
-// `;
 
 interface DashboardProps {
   match: any;

@@ -6,11 +6,6 @@ import "./index.css";
 interface NavbarProps {}
 
 export const Navbar: React.FC<NavbarProps> = ({}) => {
-  const [dropdownOpen, setDropdown] = useState(false);
-  const path = window.location.pathname;
-  const loggedIn = !!localStorage.getItem("token");
-  const avatar = localStorage.getItem("avatar");
-
   return (
     <div className="navbar__placeholder">
       <div className="navbar__container">
