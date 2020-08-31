@@ -19,7 +19,7 @@ const data = [
       "/assets/zepplan3.png",
       "/assets/zepplan4.png"
     ],
-    createdAt: "1598297320",
+    createdAt: "1593529919763",
     github: "https://github.com/brnjlee/Zepplan",
     live: "https://zepplan.now.sh/"
   },
@@ -29,7 +29,7 @@ const data = [
     description: "test",
     images: [],
     displayImageId: "/assets/loochat1.png",
-    createdAt: "1598297320",
+    createdAt: "1547921101000",
     github: "https://github.com/brnjlee/LooChat",
     live: "https://loochat.herokuapp.com/"
   }
@@ -52,8 +52,7 @@ export const Dashboard: React.FC<DashboardProps> = ({ match }) => {
             images={project.images}
             github={project.github}
             live={project.live}
-            // history={history}
-            createdAt={"1598468701"}
+            createdAt={project.createdAt}
             isSelected={match.params.id === project._id}
           />
         ))}

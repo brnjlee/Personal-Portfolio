@@ -39,14 +39,17 @@ export const Home: React.FC<HomeProps> = ({}) => {
   const title = "Hi, I'm Brian";
   const description =
     "3A Systems Design Engineering Student at the University of Waterloo";
-  const titleItems = title
-    .split("")
-    .map((char, i) => <motion.span variants={titleItem}>{char}</motion.span>);
-  const descriptionItems = description
-    .split(" ")
-    .map((char, i) => (
-      <motion.span variants={descriptionItem}> {char}</motion.span>
-    ));
+  const titleItems = title.split("").map((char, i) => (
+    <motion.span key={i} variants={titleItem}>
+      {char}
+    </motion.span>
+  ));
+  const descriptionItems = description.split(" ").map((char, i) => (
+    <motion.span key={i} variants={descriptionItem}>
+      {" "}
+      {char}
+    </motion.span>
+  ));
   return (
     <div className="home__container">
       <div className="home__header">

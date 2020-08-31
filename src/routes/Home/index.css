@@ -1,19 +1,14 @@
 .home__container {
-  width: 100%;
+  width: 1000px;
   display: flex;
   align-items: center;
-  justify-content: center;
+  /* justify-content: center; */
   height: calc(100vh - 90px);
 }
 
 .home__header {
-  width: auto;
+  width: 100%;
   font-family: "Lora", serif;
-  /* position: absolute; */
-  /* left: 50px; */
-  padding: 50px;
-  /* top: 50%; */
-  /* transform: translate(0, -50%); */
 }
 
 .home__title {
@@ -39,7 +34,11 @@
   overflow: hidden;
 }
 
-@media only screen and (max-width: 800px) {
+@media only screen and (max-width: 1000px) {
+  .home__container {
+    width: 100%;
+    padding: 0 20px;
+  }
   .home__title {
     font-size: 45px;
     line-height: 50px;

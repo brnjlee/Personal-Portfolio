@@ -25,7 +25,7 @@ export const Project = ({
       opacity: 1
     }
   };
-  const date = format(new Date(parseInt(createdAt)), "MMM, d y");
+  const date = format(new Date(parseInt(createdAt)), "MMM, y");
 
   return (
     <div className="project__container">
@@ -60,7 +60,7 @@ export const Project = ({
             <Link to={`${url}/${id}`} className={`card-open-link`} />
             <div className="card__details">
               <span className="card__title">{title}</span>
-              {/* <span className="card__date">{date}</span> */}
+              <span className="card__date">{date}</span>
             </div>
           </div>
         )}
