@@ -1,5 +1,5 @@
 import React from "react";
-import { motion, useMotionValue, useInvertedScale } from "framer-motion";
+import { motion, useInvertedScale } from "framer-motion";
 import { Link } from "react-router-dom";
 import { useRouteMatch } from "react-router-dom";
 import { FiGithub, FiExternalLink, FiX } from "react-icons/fi";
