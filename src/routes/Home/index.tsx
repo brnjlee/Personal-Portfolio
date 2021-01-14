@@ -38,7 +38,7 @@ export const Home: React.FC<HomeProps> = ({}) => {
   };
   const title = "Hi, I'm Brian";
   const description =
-    "3A Systems Design Engineering Student at the University of Waterloo";
+    "3B Systems Design Engineering Student at the University of Waterloo";
   const titleItems = title.split("").map((char, i) => (
     <motion.span key={i} variants={titleItem}>
       {char}

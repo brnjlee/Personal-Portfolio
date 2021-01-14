@@ -31,7 +31,7 @@ const data = [
     displayImageId: "/assets/loochat1.png",
     createdAt: "1547921101000",
     github: "https://github.com/brnjlee/LooChat",
-    live: "https://loochat.herokuapp.com/"
+    // live: "https://loochat.herokuapp.com/"
   }
 ];
 

@@ -156,11 +156,13 @@ const Links = ({ github, live }) => {
           <FiGithub />
         </div>
       </a>
-      <a href={live} rel="noopener noreferrer" target="_blank">
-        <div className="icon">
-          <FiExternalLink />
-        </div>
-      </a>
+      {live && (
+        <a href={live} rel="noopener noreferrer" target="_blank">
+          <div className="icon">
+            <FiExternalLink />
+          </div>
+        </a>
+      )}
     </motion.div>
   );
 };
