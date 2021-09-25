@@ -1,50 +1,78 @@
 .home__container {
-  width: 1000px;
-  display: flex;
-  align-items: center;
-  /* justify-content: center; */
-  height: calc(100vh - 90px);
+	width: 1000px;
+	display: flex;
+	align-items: center;
+	/* justify-content: center; */
+	height: calc(100vh - 90px);
 }
 
 .home__header {
-  width: 100%;
-  font-family: "Lora", serif;
+	width: 100%;
+	font-family: "Lora", serif;
 }
 
 .home__title {
-  font-size: 70px;
-  line-height: 70px;
-  position: relative;
-  overflow: hidden;
-  margin-bottom: 20px;
+	font-size: 70px;
+	line-height: 70px;
+	position: relative;
+	overflow: hidden;
+	margin-bottom: 20px;
 }
 
 .home__title span {
-  position: relative;
+	position: relative;
 }
 
 .home__description span {
-  position: relative;
-  opacity: 0.5;
+	position: relative;
+	opacity: 0.5;
 }
 
 .home__description {
-  font-size: 25px;
-  line-height: 32px;
-  overflow: hidden;
+	font-size: 25px;
+	line-height: 32px;
+	overflow: hidden;
+	margin-bottom: 30px;
+}
+
+.home__link-container {
+	overflow: hidden;
+	line-height: 32px;
+	font-size: 20px;
+}
+
+.home__link {
+	text-decoration: none;
+	position: relative;
+	color: white;
+	font-weight: 400;
+}
+
+.home__link span {
+	position: relative;
+	opacity: 0.8;
+	transition: all 100ms ease;
+}
+
+.home__link:hover span {
+	opacity: 0.5;
 }
 
 @media only screen and (max-width: 1000px) {
-  .home__container {
-    width: 100%;
-    padding: 0 20px;
-  }
-  .home__title {
-    font-size: 45px;
-    line-height: 50px;
-  }
-  .home__description {
-    font-size: 20px;
-    line-height: 30px;
-  }
+	.home__container {
+		width: 100%;
+		padding: 0 20px;
+	}
+	.home__title {
+		font-size: 45px;
+		line-height: 50px;
+	}
+	.home__description {
+		font-size: 20px;
+		line-height: 30px;
+	}
+	.home__link-container {
+		font-size: 18px;
+		line-height: 30px;
+	}
 }
