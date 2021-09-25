@@ -113,7 +113,7 @@ export const Home: React.FC<HomeProps> = ({}) => {
 					variants={linkedInList}
 				>
 					<a
-						href="/assets/resume.pdf"
+						href="https://www.linkedin.com/in/brian-lee-2553a1149/"
 						className="home__link"
 						target="_blank"
 						rel="noopener noreferrer"
@@ -128,7 +128,7 @@ export const Home: React.FC<HomeProps> = ({}) => {
 					variants={githubList}
 				>
 					<a
-						href="/assets/resume.pdf"
+						href="https://github.com/brnjlee"
 						className="home__link"
 						target="_blank"
 						rel="noopener noreferrer"
