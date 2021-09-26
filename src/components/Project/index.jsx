@@ -25,7 +25,7 @@ export const Project = ({
       opacity: 1
     }
   };
-  const date = format(new Date(parseInt(createdAt)), "MMM, y");
+  const date = createdAt ? format(new Date(parseInt(createdAt)), "MMM, y") : "WIP";
 
   return (
     <div className="project__container">
