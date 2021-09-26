@@ -19,9 +19,9 @@ const data = [
       "/assets/zepplan3.png",
       "/assets/zepplan4.png"
     ],
-    createdAt: "1593529919763",
-    github: "https://github.com/brnjlee/Zepplan",
-    live: "https://zepplan.now.sh/"
+//     createdAt: "1593529919763",
+//     github: "https://github.com/brnjlee/Zepplan",
+//     live: "https://zepplan.now.sh/"
   },
   {
     _id: "loochat",
