@@ -62,7 +62,7 @@ export const Home: React.FC<HomeProps> = ({}) => {
 	};
 	const title = "Hi, I'm Brian";
 	const description =
-		"4A Systems Design Engineering Student at the University of Waterloo";
+		"Systems Design Engineering Graduate at the University of Waterloo";
 	const linkedIn = "LinkedIn";
 	const github = "Github";
 	const titleItems = title.split("").map((char, i) => (
